@@ -23,7 +23,7 @@ class DiComponent extends Component
      * @var array Providers
      */
     protected $providers = [
-        'Service' => [
+        'Services' => [
             'consumer' => ContainerInterface::class,
             'scope' => 'global'
         ]
