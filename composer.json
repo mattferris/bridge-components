@@ -7,7 +7,7 @@
         }
     },
     "require": {
-        "mattferris/component": "dev-develop",
+        "mattferris/component": "^1.0",
         "mattferris/provider": "~0.3"
     },
     "require-dev": {
