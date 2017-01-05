@@ -18,7 +18,7 @@ use MattFerris\Application\Component;
 use MattFerris\Events\DispatcherInterface;
 use MattFerris\Events\LoggerInterface;
 
-class HttpRoutingComponent extends Component
+class EventsComponent extends Component
 {
     /**
      * @var array Providers
