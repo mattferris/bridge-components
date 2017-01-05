@@ -8,7 +8,7 @@
     },
     "require": {
         "mattferris/component": "dev-develop",
-        "mattferris/provider": "dev-develop"
+        "mattferris/provider": "~0.3"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.8"
