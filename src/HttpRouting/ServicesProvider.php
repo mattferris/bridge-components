@@ -17,6 +17,7 @@ namespace MattFerris\Bridge\Components\HttpRouting;
 use MattFerris\Provider\ProviderInterface;
 use MattFerris\Di\ContainerInterface;
 use MattFerris\Http\Routing\Dispatcher;
+use MattFerris\Http\Routing\DispatcherInterface;
 
 class ServicesProvider implements ProviderInterface
 {
@@ -27,6 +28,6 @@ class ServicesProvider implements ProviderInterface
     {
         $consumer->set('HttpDispatcher', function (ContainerInterface $container) {
             return new Dispatcher($container);
-        });
+        }, true, DispatcherInterface::class);
     }
 }
