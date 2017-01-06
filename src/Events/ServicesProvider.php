@@ -2,14 +2,14 @@
 
 /**
  * bridge-components - Bridge components for mattferris/application
- * www.bueller.ca/bridge-components
+ * github.com/mattferris/bridge-components
  *
  * Events/ServicesProvider.php
  * @copyright Copyright (c) 2016 Matt Ferris
  * @author Matt Ferris <matt@bueller.ca>
  *
  * Licensed under BSD 2-clause license
- * www.bueller.ca/bridge-components/license
+ * github.com/mattferris/bridge-components/blob/master/LICENSE
  */
 
 namespace MattFerris\Bridge\Components\Events;
