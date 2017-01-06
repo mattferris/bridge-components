@@ -8,7 +8,7 @@ Currently hosts components for
 
 * [mattferis/di](https://github.com/mattferris/di)
 * [mattferris/events](https://github.com/mattferris/events)
-* [mattferris/http-routing)(https://github.com/mattferris/http-routing)
+* [mattferris/http-routing](https://github.com/mattferris/http-routing)
 
 Install via composer
 
