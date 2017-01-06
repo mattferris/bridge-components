@@ -4,7 +4,7 @@
  * bridge-components - Bridge components for mattferris/application
  * github.com/mattferris/bridge-components
  *
- * Events/HttpRoutingComponent.php
+ * Di/DiComponent.php
  * @copyright Copyright (c) 2016 Matt Ferris
  * @author Matt Ferris <matt@bueller.ca>
  *
@@ -12,25 +12,20 @@
  * github.com/mattferris/bridge-components/blob/master/LICENSE
  */
 
-namespace MattFerris\Bridge\Components\Events;
+namespace MattFerris\Bridge\Components\Di;
 
 use MattFerris\Application\Component;
-use MattFerris\Events\DispatcherInterface;
-use MattFerris\Events\LoggerInterface;
+use MattFerris\Di\ContainerInterface;
 
-class EventsComponent extends Component
+class DiComponent extends Component
 {
     /**
      * @var array Providers
      */
     protected $providers = [
-        'Events' => [
-            'consumer' => DispatcherInterface::class,
+        'Services' => [
+            'consumer' => ContainerInterface::class,
             'scope' => 'global'
-        ],
-        'EventsLogger' => [
-            'consumer' => LoggerInterface::class,
-            'scope' => 'global'
-        ],
+        ]
     ];
 }

@@ -2,20 +2,21 @@
 
 /**
  * bridge-components - Bridge components for mattferris/application
- * www.bueller.ca/bridge-components
+ * github.com/mattferris/bridge-components
  *
  * HttpRouting/HttpRoutingComponent.php
  * @copyright Copyright (c) 2016 Matt Ferris
  * @author Matt Ferris <matt@bueller.ca>
  *
  * Licensed under BSD 2-clause license
- * www.bueller.ca/bridge-components/license
+ * github.com/mattferris/bridge-components/blob/master/LICENSE
  */
 
 namespace MattFerris\Bridge\Components\HttpRouting;
 
 use MattFerris\Application\Component;
 use MattFerris\Http\Routing\DispatcherInterface;
+use MattFerris\Di\ContainerInterface;
 use Zend\Diactoros\ServerRequestFactory;
 use Zend\Diactoros\Response\SapiEmitter;
 
@@ -33,11 +34,13 @@ class HttpRoutingComponent extends Component
 
     /**
      * Bootstrap an HTTP request/response cycle
+     *
+     * @param \MattFerris\Di\ContainerInterface $container
      */
-    static public function run()
+    static public function run(ContainerInterface $container)
     {
         $request = ServerRequestFactory::fromGlobals();
-        $response = $this->container->get('HttpDispatcher')->dispatch($request);
+        $response = $container->get('HttpDispatcher')->dispatch($request);
         (new SapiEmitter())->emit($response);
     }
 }

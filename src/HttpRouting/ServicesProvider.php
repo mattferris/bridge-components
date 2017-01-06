@@ -2,14 +2,14 @@
 
 /**
  * bridge-components - Bridge components for mattferris/application
- * www.bueller.ca/bridge-components
+ * github.com/mattferris/bridge-components
  *
  * HttpRouting/ServicesProvider.php
  * @copyright Copyright (c) 2016 Matt Ferris
  * @author Matt Ferris <matt@bueller.ca>
  *
  * Licensed under BSD 2-clause license
- * www.bueller.ca/bridge-components/license
+ * github.com/mattferris/bridge-components/blob/master/LICENSE
  */
 
 namespace MattFerris\Bridge\Components\HttpRouting;
@@ -17,6 +17,7 @@ namespace MattFerris\Bridge\Components\HttpRouting;
 use MattFerris\Provider\ProviderInterface;
 use MattFerris\Di\ContainerInterface;
 use MattFerris\Http\Routing\Dispatcher;
+use MattFerris\Http\Routing\DispatcherInterface;
 
 class ServicesProvider implements ProviderInterface
 {
@@ -27,6 +28,6 @@ class ServicesProvider implements ProviderInterface
     {
         $consumer->set('HttpDispatcher', function (ContainerInterface $container) {
             return new Dispatcher($container);
-        });
+        }, true, DispatcherInterface::class);
     }
 }
