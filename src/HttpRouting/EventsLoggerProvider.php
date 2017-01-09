@@ -12,9 +12,10 @@
  * www.bueller.ca/bridge-components/license
  */
 
-namespace MattFerris\Application;
+namespace MattFerris\Bridge\Components\HttpRouting;
 
 use MattFerris\Provider\ProviderInterface;
+use MattFerris\HttpRouting\DomainEventLoggerHelpers
 
 class EventsLoggerProvider implements ProviderInterface
 {
