@@ -15,7 +15,7 @@
 namespace MattFerris\Bridge\Components\HttpRouting;
 
 use MattFerris\Provider\ProviderInterface;
-use MattFerris\HttpRouting\DomainEventLoggerHelpers
+use MattFerris\HttpRouting\DomainEventLoggerHelpers;
 
 class EventsLoggerProvider implements ProviderInterface
 {
