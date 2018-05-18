@@ -4,7 +4,7 @@
  * bridge-components - Bridge components for mattferris/application
  * github.com/mattferris/bridge-components
  *
- * Events/ServicesProvider.php
+ * Auth/AuthComponent.php
  * @copyright Copyright (c) 2017 Matt Ferris
  * @author Matt Ferris <matt@bueller.ca>
  *

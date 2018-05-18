@@ -16,7 +16,6 @@ namespace MattFerris\Bridge\Components\Events;
 
 use MattFerris\Provider\ProviderInterface;
 use MattFerris\Events\Dispatcher;
-use MattFerris\Events\Logger;
 
 class ServicesProvider implements ProviderInterface
 {
@@ -25,8 +24,6 @@ class ServicesProvider implements ProviderInterface
      */
     public function provides($consumer)
     {
-        $dispatcher = new Dispatcher();
-        $consumer->set('EventDispatcher', $dispatcher);
-        $consumer->set('EventLogger', new Logger($dispatcher));
+        $consumer->set('EventDispatcher', new Dispatcher());
     }
 }

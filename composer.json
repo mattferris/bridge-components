@@ -10,9 +10,6 @@
         "mattferris/component": "^1.0",
         "mattferris/provider": "~0.3"
     },
-    "require-dev": {
-        "phpunit/phpunit": "~4.8"
-    },
     "license": "BSD-2-Clause",
     "authors": [
         {

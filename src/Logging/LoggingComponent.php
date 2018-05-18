@@ -4,31 +4,26 @@
  * bridge-components - Bridge components for mattferris/application
  * github.com/mattferris/bridge-components
  *
- * Events/EventsComponent.php
- * @copyright Copyright (c) 2016 Matt Ferris
+ * Logging/LoggingComponent.php
+ * @copyright Copyright (c) 2017 Matt Ferris
  * @author Matt Ferris <matt@bueller.ca>
  *
  * Licensed under BSD 2-clause license
  * github.com/mattferris/bridge-components/blob/master/LICENSE
  */
 
-namespace MattFerris\Bridge\Components\Events;
+namespace MattFerris\Bridge\Components\Logging;
 
 use MattFerris\Application\Component;
-use MattFerris\Events\DispatcherInterface;
-use MattFerris\Events\LoggerInterface;
+use MattFerris\Logging\LoggerInterface;
 
-class EventsComponent extends Component
+class LoggingComponent extends Component
 {
     /**
      * @var array Providers
      */
     protected $providers = [
-        'Events' => [
-            'consumer' => DispatcherInterface::class,
-            'scope' => 'global'
-        ],
-        'EventsLogger' => [
+        'Logger' => [
             'consumer' => LoggerInterface::class,
             'scope' => 'global'
         ],
