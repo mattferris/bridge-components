@@ -1,0 +1,81 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "dec0d2e3472f85d37e26a1d92a2479a9",
+    "packages": [
+        {
+            "name": "mattferris/component",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mattferris/component.git",
+                "reference": "bb1215d87164c352357c60db2b7766dc2836bf67"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mattferris/component/zipball/bb1215d87164c352357c60db2b7766dc2836bf67",
+                "reference": "bb1215d87164c352357c60db2b7766dc2836bf67",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MattFerris\\Component\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Ferris",
+                    "email": "matt@bueller.ca"
+                }
+            ],
+            "description": "An application component interface",
+            "time": "2017-01-05T21:08:51+00:00"
+        },
+        {
+            "name": "mattferris/provider",
+            "version": "0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mattferris/provider.git",
+                "reference": "198802c8bfddb011f9fcfd5d0bde1aa3d9ed8cbf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mattferris/provider/zipball/198802c8bfddb011f9fcfd5d0bde1aa3d9ed8cbf",
+                "reference": "198802c8bfddb011f9fcfd5d0bde1aa3d9ed8cbf",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MattFerris\\Provider\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Matt Ferris",
+                    "email": "matt@bueller.ca"
+                }
+            ],
+            "description": "Implementation standard for consumer/provider interfaces",
+            "time": "2017-01-04T00:47:25+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
