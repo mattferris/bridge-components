@@ -15,7 +15,7 @@
 namespace MattFerris\Bridge\Components\Logging;
 
 use MattFerris\Application\Component;
-use MattFerris\Logging\LoggerInterface;
+use Psr\Log\LoggerInterface;
 
 class LoggingComponent extends Component
 {
