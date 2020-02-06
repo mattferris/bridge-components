@@ -17,9 +17,9 @@ namespace MattFerris\Bridge\Components\Events;
 use MattFerris\Provider\ProviderInterface;
 use MattFerris\Events\Logger;
 use MattFerris\Events\DispatcherInterface;
-use MattFerris\Psr\Log\LoggerInterface;
+use Psr\Log\LoggerInterface;
 
-class ServicesProvider implements ProviderInterface
+class LoggerProvider implements ProviderInterface
 {
     /**
      * @var MattFerris\Events\DispaptcherInterface
