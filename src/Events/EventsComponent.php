@@ -33,4 +33,13 @@ class EventsComponent extends Component
             'scope' => 'global'
         ],
     ];
+
+    /**
+     * {@inheritDoc}
+     */
+    public function init(array $providers = [])
+    {
+        $consumer->set('EventDispatcher', new Dispatcher());
+        parent::init($providers);
+    }
 }
