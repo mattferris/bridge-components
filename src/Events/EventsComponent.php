@@ -15,6 +15,7 @@
 namespace MattFerris\Bridge\Components\Events;
 
 use MattFerris\Application\Component;
+use MattFerris\Di\ContainerInterface;
 use MattFerris\Events\DispatcherInterface;
 use MattFerris\Events\LoggerInterface;
 
@@ -33,4 +34,13 @@ class EventsComponent extends Component
             'scope' => 'global'
         ],
     ];
+
+    /**
+     * {@inheritDoc}
+     */
+    public function __construct(ContainerInterface $container, array $providers = [])
+    {
+        $container->set('EventDispatcher', new Dispatcher());
+        parent::__construct($container, $providers);
+    }
 }
